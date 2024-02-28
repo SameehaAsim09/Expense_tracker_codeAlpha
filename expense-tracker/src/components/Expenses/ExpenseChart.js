@@ -19,7 +19,7 @@ export default function ExpenseChart(props) {
 
     for(const expense of props.dataPoints){
         const newDataPoints = expense.date.getMonth()
-        initialDataPoints[newDataPoints].value += expense.amount;
+        initialDataPoints[newDataPoints].value += expense.amount
     }
 
   return (

@@ -3,6 +3,9 @@ import ChartBar from "./ChartBar";
 import './Chart.css'
 
 const Chart = (props) => {
+  if(!props.newdatapoints || props.newdatapoints.length === 0) {
+    return <div>No data available</div>
+  }
   const maxDataPoints = props.newdatapoints.map(
     (dataPoints) => dataPoints.value
   );

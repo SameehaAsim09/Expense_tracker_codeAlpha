@@ -3,7 +3,7 @@ export const expense = [
         id: 1,
         title: "Oppo",
         amount: 6,
-        date: new Date(2023,9,19),
+        date: new Date(2020,9,19),
     },
     {
         id: 2,
@@ -19,8 +19,14 @@ export const expense = [
     },
     {
         id: 4    ,
-        title: "Infinix",
+        title: "Redmi",
         amount: 11,
         date: new Date(2023,2,10),
+    },
+    {
+        id: 4    ,
+        title: "Lamp",
+        amount: 11,
+        date: new Date(2019,2,10),
     }
 ]
