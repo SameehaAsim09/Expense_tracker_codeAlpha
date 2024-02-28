@@ -1,20 +1,24 @@
-import React from 'react'
-import ChartBar from './ChartBar';
-import "./Chart.css";
+import React from "react";
+import ChartBar from "./ChartBar";
+import './Chart.css'
 
-
-export default function Chart(props) {
-    const maxDataPoints = props.newDataPoints.map((datapoints) => datapoints.value);
-    const maxValue = Math.max(...maxDataPoints);
+const Chart = (props) => {
+  const maxDataPoints = props.newdatapoints.map(
+    (dataPoints) => dataPoints.value
+  );
+  const maxValue = Math.max(...maxDataPoints);
   return (
-    <div className='chart'>
-      {props.newDataPoints.map((newdatapoints) => (
-        <ChartBar 
-            key={newdatapoints.label}
-            label={newdatapoints.label}
-            value={newdatapoints.value}
-            maxValue={maxValue}    
-        />))}
+    <div className="chart">
+      {props.newdatapoints.map((Points) => (
+        <ChartBar
+          key={Points.label}
+          label={Points.label}
+          value={Points.value}
+          maxValue={maxValue}
+        />
+      ))}
     </div>
-  )
-}
+  );
+};
+
+export default Chart;
